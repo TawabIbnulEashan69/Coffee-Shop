@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Payment</title>
+</head>
+<body>
+    <div class="payment-container">
+        <h1 class="text-center">Payment Details</h1>
+        <form id="payment-form" class="payment-form">
+            <label>
+                <span>Cardholder Name</span>
+                <input type="text" placeholder="John Doe" required>
+            </label>
+            <label for="card-number">
+                <span>Card Number</span>
+            <input type="text" id="card-number" maxlength="19" placeholder="1234 5678 9012 3456">
+            </label>
+            <label>
+                <span>Expiry Date</span>
+                <input type="date" placeholder="MM/YY" required>
+            </label>
+            <label>
+                <span>CVV</span>
+                <input type="text" name="cvv" pattern="\d{3,4}" maxlength="4" placeholder="CVV" required>
+            </label>
+            <button type="submit" class="btn">Submit Payment</button>
+        </form>
+    </div>
+
+    <script src="payment.js"></script>
+</body>
+</html>

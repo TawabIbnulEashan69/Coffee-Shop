@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- stylesheet link for review icons and item favicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Mean Bean</title>
+</head>
+<body>
+
+    <!--HEADER-->
+    <header class="header">
+        <div class="container split">
+            <a href="#home">
+                <img src="images/Coffee Shop Food GIF by Mean Bean Coffee.gif" alt="Logo" class="logo">
+            </a>
+            <nav id="nav" class="nav">
+                <ul class="nav-list row">
+                    <li class="nav-link"><a href="#home">Home</a></li>
+                    <li class="nav-link"><a href="#about">About</a></li>
+                    <li class="nav-link"><a href="#menu">Menu</a></li>
+                    <li class="nav-link"><a href="#products">Products</a></li>
+                    <li class="nav-link"><a href="#review">Review</a></li>
+                    <li class="nav-link"><a href="#contact">Contact</a></li>
+                    <li class="nav-link"><a href="#blogs">Blogs</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-icons">
+                <i id="search-btn" class="fa-sharp fa-solid fa-magnifying-glass"></i>
+                <i id="cart-shopping" class="fa-regular fa-cart-shopping"></i>
+                <i id="open-btn" class="fa-solid fa-bars"></i>
+            </div>
+
+
+                <label class="search_inp">
+                    <input type="search" class="search_bar" placeholder="Search...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+
+                <div class="shopping-cart">
+                    <div class="items">
+                        <h2>You haven't Any Item</h2>
+                    </div>
+
+                    <button class="btn check-items">Checkout Now</button>
+                </div>
+
+        </div>
+    </header>
+
+
+
+    <!--MAIN-->
+    <div id="home" class="main split">
+        <div class="container">
+            <div class="main-text">
+                <h1>fresh coffee in the morning</h1>
+                <p>The aroma of fresh coffee fills the air, awakening senses, fueling energy, and setting the perfect tone for a productive day.
+                </p>
+                <a href="index.html#products"><button class="btn">Get Yours Now</button></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--ABOUT-->
+
+    <section class="section about" id="about">
+        <div class="container">
+            <h1 class="text-center sect-head">
+                <span>About</span> us
+            </h1>
+            <div class="row">
+                <img src="images/about-img.jpeg" alt="about-img" class="about-img col-50">
+                <div class="about-content col-48">
+                    <h2>What Makes Our Coffee Special?</h2>
+                    <p>Our coffee is special because we carefully source the finest beans, expertly roast them to perfection, and craft each cup with love, delivering rich flavor and invigorating warmth.</p>
+                    <p>We take pride in our coffee, selecting premium beans, roasting with precision, and ensuring every sip is smooth, aromatic, and delightful. It’s more than a drink—it’s an experience worth savoring.</p>
+                    <a href="about-us.html"><button class="btn">More</button></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!--OUR MENU-->
+    <section class="section menu" id="menu">
+        <div class="container">
+            <h1 class="text-center sect-head">
+                our <span>menu</span>
+            </h1>
+            <div class="grid cards">
+                <div class="card text-center">
+                    <img src="images/menu-1.png" alt="" class="card-img">
+                    <h4>Milk Coffee</h4>
+                    <p>$15.99 <del>$20.99</del></p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="card text-center">
+                    <img src="images/menu-2.png" alt="" class="card-img">
+                    <h4>White Coffee</h4>
+                    <p>$15.99 <del>$20.99</del></p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="card text-center">
+                    <img src="images/menu-3.png" alt="" class="card-img">
+                    <h4>Cappuccino</h4>
+                    <p>$15.99 <del>$20.99</del></p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="card text-center">
+                    <img src="images/menu-4.png" alt="" class="card-img">
+                    <h4>Latte</h4>
+                    <p>$15.99 <del>$20.99</del></p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="card text-center">
+                    <img src="images/menu-5.png" alt="" class="card-img">
+                    <h4>Latte premium</h4>
+                    <p>$150.99 <del>$200.99</del></p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="card text-center">
+                    <img src="images/menu-6.png" alt="" class="card-img">
+                    <h4>Canna Coffee</h4>
+                    <p>$95.99 <del>$130.99</del></p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--LATEST PRODUCTS-->
+    <section class="section menu" id="products">
+        <div class="container">
+            <h1 class="text-center sect-head">
+                More <span>items</span>
+            </h1>
+            <div class="grid cards">
+                <div class="card text-center">
+                    <img src="images/cart-item-1.png" alt="" class="card-img">
+                    <h4>White beans</h4>
+                    <p>$65.99 <del>$80.99</del></p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="card text-center">
+                    <img src="images/cart-item-2.png" alt="" class="card-img">
+                    <h4>Black beans</h4>
+                    <p>$66.99 <del>$87.99</del></p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="card text-center">
+                    <img src="images/cart-item-3.png" alt="" class="card-img">
+                    <h4>Green beans</h4>
+                    <p>$55.99 <del>$70.99</del></p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="card text-center">
+                    <img src="images/cart-item-4.png" alt="" class="card-img">
+                    <h4>Mixed beans</h4>
+                    <p>$46.99 <del>$52.99</del></p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="card text-center">
+                    <img src="images/product-1.png" alt="" class="card-img">
+                    <h4>Nicaragua</h4>
+                    <p>$250.99 <del>$300.99</del></p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="card text-center">
+                    <img src="images/product-3.png" alt="" class="card-img">
+                    <h4>Peru Coffee </h4>
+                    <p>$95.99 <del>$143.99</del></p>
+                    <button class="btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--CUSTOMER'S REVIEW-->
+    <section class="section review" id="review">
+        <div class="container">
+            <h1 class="text-center sect-head">
+                customer's <span>review</span>
+            </h1>
+
+            <div class="grid cards review">
+                <div class="card text-center">
+                    <i class="fa-solid fa-comment-dots"></i>
+                    <p>"Absolutely fantastic coffee! Rich, smooth, and aromatic—a perfect start to my day."</p>
+                    <img src="images/pic-1.png"
+                    alt="pic-1" class="card-img">
+                    <h2>John</h2>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                </div>
+                <div class="card text-center">
+                    <i class="fa-solid fa-comment-dots"></i>
+                    <p>"Hands down the best coffee I've tasted! Full-bodied flavor with the right balance of boldness and smoothness."</p>
+                    <img src="images/pic-2.png"
+                    alt="pic-1" class="card-img">
+                    <h2>Sara</h2>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                </div>
+                <div class="card text-center">
+                    <i class="fa-solid fa-comment-dots"></i>
+                    <p>"This coffee is a game-changer! Freshly brewed, beautifully crafted, and consistently delicious. Highly recommended!"</p>
+                    <img src="images/pic-3.png"
+                    alt="pic-1" class="card-img">
+                    <h2>Ali</h2>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--CONTACT US-->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h1 class="sect-head text-center">
+                contact <span>us</span>
+            </h1>
+
+            <div class="row">
+                <div class="col-50 map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.483354238221!2d90.42360667521261!3d23.801405278635613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7bba6ffeb31%3A0xdb02a491b63b8494!2sUniversity%20of%20Information%20Technology%20and%20Sciences%20(UITS)!5e0!3m2!1sen!2sbd!4v1746039060713!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="col-48 contact-info">
+                    <h1 class="info-head text-center">get in touch</h1>
+                    <div class="info-inputs row">
+                        <form id="contact-form">
+                            <label>
+                                <i class="fa-solid fa-user"></i>
+                                <input type="text" placeholder="name" name="name" class="name" required>
+                            </label>
+                            <label>
+                                <i class="fa-solid fa-envelope"></i>
+                                <input type="email" placeholder="email" name="email" class="email" required>
+                            </label>
+                            <label>
+                                <i class="fa-solid fa-phone-flip"></i>
+                                <input type="number" placeholder="number" name="number" class="number" required>
+                            </label>
+                            <button type="submit" class="btn contact-btn">Contact Now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--OUR BLOGS-->
+    <section class="section blogs" id="blogs">
+        <div class="container">
+            <h1 class="sect-head text-center">
+                our <span>blogs</span>
+            </h1>
+
+            <div class="grid cards blog-cards">
+                <div class="card">
+                    <img src="images/blog-1.jpeg"
+                         alt="blog-1" class="blog-img">
+                    <div class="blog-content">
+                        <h1 class="content-head">Coffee makes a morning more than a refreshing.</h1>
+                        <p class="content-date">By Admin / 01.05.25</p>
+                        <p class="content-description">Take a sip, don't waste time!</p>
+                        <a href="blog-1.html"><button class="btn blog-btn">Read More</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/blog-2.jpeg"
+                         alt="blog-1" class="blog-img">
+                    <div class="blog-content">
+                        <h1 class="content-head">Deliciously Cool Coffee Creations</h1>
+                        <p class="content-date">By Admin / 01.05.25</p>
+                        <p class="content-description">Take a sip, don't waste time!</p>
+                       <a href="blog-2.html"><button class="btn blog-btn">Read More</button></a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="images/blog-3.jpeg"
+                         alt="blog-1" class="blog-img">
+                    <div class="blog-content">
+                        <h1 class="content-head">Chilled Coffee Bliss</h1>
+                        <p class="content-date">By Admin / 01.05.25</p>
+                        <p class="content-description">Take a sip, don't waste time!</p>
+                        <a href="blog-3.html"><button class="btn blog-btn">Read More</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <div class="author">
+            <p>
+                Created By <a href="https://github.com/DBugDD">Debug</a> | All Right Reserved
+            </p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

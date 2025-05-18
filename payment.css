@@ -1,0 +1,146 @@
+/*fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*root and variables*/
+:root {
+  --primary-color: #6d3636;
+  --secondary-color: #562424;
+  --light-color: #ffffff;
+  --heading-color: #333333;
+  --text-color: #000000;
+  --border-color: #cccccc;
+  --border-color-hover: #aaaaaa;
+  --button-color: #1f7a8c;
+  --button-color-hover: #146e80;
+}
+
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+input,
+button {
+  border: none;
+  outline: none;
+  transition: all 0.2s linear;
+}
+
+label {
+  text-transform: capitalize;
+}
+
+/*container*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding: 1.5rem;
+  background: linear-gradient(
+    90deg,
+    var(--primary-color) 60%,
+    var(--secondary-color) 40%
+  );
+  padding-bottom: 30px;
+}
+
+/*payment form*/
+.container #payment-form {
+  padding: 1.25rem;
+  width: 90%;
+  max-width: 700px;
+  background-color: var(--light-color);
+  box-shadow: rgba(0, 0, 0, 0.1);
+}
+
+.container #payment-form .row {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.container #payment-form .col .title {
+  font-size: 1.1rem;
+  color: var(--heading-color);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container #payment-form .col .input-box {
+  margin: 0.8rem 0;
+}
+
+.container #payment-form .col .input-box img {
+  display: inline-block;
+  width: auto;
+  /* max-width: 205px;  */
+  height: 31px;
+  filter: drop-shadow(0 0 1px var(--text-color));
+}
+
+.container #payment-form .col .input-box label {
+  font-size: 0.91rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.container #payment-form .col .input-box input {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 0.85rem;
+  border: 1px solid var(--border-color);
+}
+
+.container #payment-form .col .input-box input:focus {
+  border-color: var(--border-color-hover);
+}
+
+.container #payment-form .col .flex {
+  display: flex;
+  /* align-items: center; */
+  gap: 0.9rem;
+}
+
+.container #payment-form #submit-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  background-color: var(--button-color);
+  color: var(--light-color);
+  margin-top: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.container #payment-form #submit-button:hover {
+  background-color: var(--button-color-hover);
+}
+
+@media only screen and (min-width: 768px) {
+  .container #payment-form .row {
+    flex-direction: row;
+  }
+
+  .container #payment-form .col {
+    flex: 1 1 250px;
+  }
+
+  .container #payment-form .col .title {
+    font-size: 1.25rem;
+  }
+
+  .container #payment-form .col .input-box input {
+    font-size: 0.9rem;
+  }
+}

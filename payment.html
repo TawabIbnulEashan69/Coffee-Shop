@@ -3,33 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="payment.css">
     <title>Payment</title>
 </head>
 <body>
-    <div class="payment-container">
-        <h1 class="text-center">Payment Details</h1>
-        <form id="payment-form" class="payment-form">
-            <label>
-                <span>Cardholder Name</span>
-                <input type="text" placeholder="John Doe" required>
-            </label>
-            <label for="card-number">
-                <span>Card Number</span>
-            <input type="text" id="card-number" maxlength="19" placeholder="1234 5678 9012 3456">
-            </label>
-            <label>
-                <span>Expiry Date</span>
-                <input type="date" placeholder="MM/YY" required>
-            </label>
-            <label>
-                <span>CVV</span>
-                <input type="text" name="cvv" pattern="\d{3,4}" maxlength="4" placeholder="CVV" required>
-            </label>
-            <button type="submit" class="btn">Submit Payment</button>
-        </form>
-    </div>
+    <!--container-->
+<div class="container">
+  <!--payment form-->
+  <form action="#" id="payment-form">
+    <div class="row">
+      <!--address info-->
+      <div class="col">
+        <h3 class="title">billing address</h3>
 
-    <script src="payment.js"></script>
+        <div class="input-box">
+          <label for="fullname">full name: </label>
+          <input type="text" name="fullname" id="fullname" placeholder="Your Name" required />
+        </div>
+        <div class="input-box">
+          <label for="email">email: </label>
+          <input type="email" name="email" id="email" placeholder="your.email@email.com" required />
+        </div>
+        <div class="input-box">
+          <label for="address">address: </label>
+          <input type="text" name="address" id="address" placeholder="Street Address" required />
+        </div>
+        <div class="input-box">
+          <label for="city">city: </label>
+          <input type="text" name="city" id="city" placeholder="City" required />
+        </div>
+        <div class="flex">
+          <div class="input-box">
+            <label for="state">state: </label>
+            <input type="text" name="state" id="state" placeholder="State" required />
+          </div>
+          <div class="input-box">
+            <label for="zip-code">zip code: </label>
+            <input type="text" name="zip-code" id="zip-code" placeholder="****" required />
+          </div>
+        </div>
+        <div class="input-box">
+                            <label for="country">country: </label>
+                            <input type="text" name="country" id="country" placeholder="Your Country" required />
+                        </div>
+
+      </div>
+      <!--payment info-->
+      <div class="col">
+        <h3 class="title">payment</h3>
+
+        <div class="input-box">
+          <label for="cards-accepted">cards accepted: </label>
+          <img src="https://raw.githubusercontent.com/Gustavo-Victor/payment-gateway-form/e2eeb53a05d6b5ada2d10306a9fd0b20605a897c/assets/images/card_img.png" alt="cards_accepted" id="cards-                                     accepted" />
+        </div>
+        <div class="input-box">
+          <label for="name-on-card">name on card: </label>
+          <input type="text" name="name-on-card" id="name-on-card" placeholder="" required />
+        </div>
+        <div class="input-box">
+          <label for="credit-card-number">credit card number: </label>
+          <input type="text" name="credit-card-number" id="credit-card-number" maxlength="16" placeholder="**** **** **** ****" required />
+        </div>
+        <div class="input-box">
+          <label for="exp-month">exp month: </label>
+          <input type="number" name="exp-month" id="exp-month" placeholder="03" min="1" max="12" required />
+        </div>
+        <div class="flex">
+          <div class="input-box">
+            <label for="exp-year">exp year: </label>
+            <input type="number" name="exp-year" id="exp-year" maxlength="4" placeholder="****" required />
+          </div>
+          <div class="input-box">
+            <label for="cvv">CVV: </label>
+            <input type="number" name="cvv" id="cvv" maxlength="4" placeholder="***" required />
+          </div>
+        </div>
+      </div>
+    </div>
+    <button id="submit-button" type="submit">Pay Now!</button>
+  </form>
+</div>
+<script src="payment.js"></script>
 </body>
 </html>
